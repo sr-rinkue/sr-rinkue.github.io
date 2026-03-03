@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- LO BÁSICO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sr. Rinkue's Games</title>
+    <link rel="icon" href="assets/Favicon.png?v=2" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- REFERENCIA A LOS ICONOS (REMIX ICON Y BOXICONS) Y LA FUENTE DE TEXTO DE GOOGLE FONTS (POPPINS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN "TOPNAV" -->
+    <header>
+      <div class="topnav">
+        <a href="#" class="logo">
+          <img src="assets/Logo.png" />
+        </a>
+        <ul class="navigation-bar">
+          <li>
+            <a class="active"
+              ><i class="ri-home-2-fill"></i
+              ><span data-translate="nav.home">Home</span></a
+            >
+          </li>
+          <li>
+            <a onclick="location.href = 'about.html'"
+              ><i class="ri-information-2-line"></i
+              ><span data-translate="nav.about">About</span></a
+            >
+          </li>
+        </ul>
+        <div class="main">
+          <!-- DROPDOWN CON LOS IDIOMAS -->
+          <button class="language-btn" id="languageBtn">
+            <i class="ri-global-line"></i>
+            <span id="currentLang">EN</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <div class="language-option" data-lang="es">
+              <span>Español castellano</span>
+              <i class="ri-check-line"></i>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span>English</span>
+              <i class="ri-check-line"></i>
+            </div>
+          </div>
+          <!-- ICONO DE MENÚ QUE SALE EN PANTALLAS PEQUEÑAS -->
+          <div class="ri-menu-3-line" id="menu-icon"></div>
+        </div>
+      </div>
+    </header>
+    <!-- BANNER -->
+    <div class="banner">
+      <img src="assets/BannerImage2.png" alt="Banner" />
+    </div>
+
+    <!-- "CONTENEDOR" DE LOS JUEGOS -->
+    <div class="container">
+      <div class="left-section">
+        <div class="image-container" id="imageContainer">
+          <img id="mainImage" class="main-image" src="" alt="Main Image" />
+        </div>
+        <p id="shortDesc" class="short-description">Lorem ipsum</p>
+
+        <div class="button-container">
+          <button id="readMoreBtn" class="read-more-btn hidden">
+            <i class="ri-arrow-right-line"></i
+            ><span data-translate="item.readMore">Read Full Description</span>
+          </button>
+          <a
+            id="externalLinkBtn"
+            class="external-link-btn hidden"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-external-link-line"></i>
+            <span id="externalLinkText">External Link</span>
+          </a>
+        </div>
+
+        <div class="where-section">
+          <h2 class="where-title" data-translate="item.availableOn">
+            AVAILABLE ON...
+          </h2>
+          <div id="whereButtons" class="where-buttons">
+            <!-- JS SE ENCARGA DE ESTA PARTE DE LOS BOTONES -->
+          </div>
+          <br><br>
+          <div id="tagsSection" class="tags-section">
+            <div id="tagsContainer" class="tags-container">
+              <!-- JS SE ENCARGA DE ESTA PARTE, ES QUE ES UN PUTO CRACK Y NOS DA EL TRABAJO SUCIO YA HECHO -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="grid" id="grid">
+          <!-- JS SE ENCARGA DE ESTA PARTE TAMBIÉN -->
+        </div>
+      </div>
+    </div>
+
+    <!-- LOS POPUP -->
+    <div id="popup" class="popup-overlay">
+      <div class="popup">
+        <div class="popup-header">
+          <h2 class="popup-title">Full Description</h2>
+          <button class="close-btn" onclick="closePopup()">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="popup-body">
+          <div id="popupContent" class="popup-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tagPopup" class="popup-overlay">
+      <div class="popup">
+        <div class="popup-header">
+          <h2
+            id="tagPopupTitle"
+            class="popup-title"
+            data-translate="tag-popup.title"
+          >
+            More Info
+          </h2>
+          <button class="close-btn" onclick="closeTagPopup()">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="popup-body">
+          <div id="tagPopupContent" class="popup-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="albumPopup" class="album-popup-overlay">
+        <div class="album-popup">
+            <div class="album-popup-header">
+                <h2 class="album-popup-title">
+                    <span id="albumPopupTitle">Album Title</span>
+                </h2>
+                <button class="album-close-btn" onclick="closeAlbumPopup()">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="album-popup-body">
+                <div class="album-content">
+                    <div class="album-cover">
+                        <img id="albumCoverImage">
+                    </div>
+                    <div class="album-links" id="albumLinksContainer">
+                        <!-- JS OTRA VEZ SE ENCARGA DE ESTA PARTE -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+    <!-- PIE DE PÁGINA "FOOTER" -->
+    <footer>
+      <div class="footer-content">
+        <!-- LA SECCIÓN DE LA IZQUIERDA DEL FOOOTER -->
+        <div class="footer-section">
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:itchdotio"></iconify-icon
+            ><span
+              ><a href="https://rinkue.itch.io" target="_blank" title="itch.io"
+                >rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:gamejolt"></iconify-icon
+            ><span
+              ><a
+                href="https://gamejolt.com/@rinkue"
+                target="_blank"
+                title="Game Jolt"
+                >@rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:steam"></iconify-icon
+            ><span
+              ><a
+                href="https://steamcommunity.com/id/sr-rinkue/"
+                target="_blank"
+                title="Steam"
+                >SrRinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:discord"></iconify-icon
+            ><span
+              ><a
+                href="https://discordapp.com/users/730077432517886044"
+                target="_blank"
+                title="Discord"
+                >sr.rinkue</a
+              ></span
+            >
+          </div>
+        </div>
+        <!-- LA SECCIÓN DE LA DERECHA DEL FOOOTER -->
+        <div class="footer-section">
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:bluesky"></iconify-icon
+            ><span
+              ><a
+                href="https://bsky.app/profile/rinkue.bsky.social"
+                target="_blank"
+                title="Bluesky"
+                >@rinkue.bsky.social</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:twitter"></iconify-icon
+            ><span
+              ><a
+                href="https://twitter.com/SrRinkue"
+                target="_blank"
+                title="X (Twitter)"
+                >@SrRinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:youtube"></iconify-icon
+            ><span
+              ><a
+                href="https://youtube.com/@sr.rinkue?sub_confirmation=1"
+                target="_blank"
+                title="YouTube"
+                >@sr.rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:gmail"></iconify-icon
+            ><span
+              ><a href="mailto:sr.rinkue@gmail.com" title="Email"
+                >sr.rinkue@gmail.com</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="fade-top"></div>
+    <div id="fade-bottom"></div>
+    <!-- SCRIPT JS -->
+    <script type="text/javascript" src="src/index_items.js"></script>
+    <script type="text/javascript" src="src/localization.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
+  </body>
+</html>

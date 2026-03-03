@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- LO BÁSICO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Sr. Rinkue</title>
+    <link rel="icon" href="assets/Favicon.png?v=2" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- REFERENCIA A LOS ICONOS (REMIX ICON Y BOXICONS) Y LA FUENTE DE TEXTO DE GOOGLE FONTS (POPPINS) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN "TOPNAV" -->
+    <header>
+      <div class="topnav">
+        <a href="#" class="logo">
+          <img src="assets/Logo.png" />
+        </a>
+        <ul class="navigation-bar">
+          <li>
+            <a onclick="location.href = 'index.html'"
+              ><i class="ri-home-2-line"></i
+              ><span data-translate="nav.home">Home</span></a
+            >
+          </li>
+          <li>
+            <a class="active"
+              ><i class="ri-information-2-fill"></i
+              ><span data-translate="nav.about">About</span></a
+            >
+          </li>
+        </ul>
+        <div class="main">
+          <!-- DROPDOWN CON LOS IDIOMAS -->
+          <button class="language-btn" id="languageBtn">
+            <i class="ri-global-line"></i>
+            <span id="currentLang">EN</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <div class="language-option" data-lang="es">
+              <span>Español castellano</span>
+              <i class="ri-check-line"></i>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span>English</span>
+              <i class="ri-check-line"></i>
+            </div>
+          </div>
+          <!-- ICONO DE MENÚ QUE SALE EN PANTALLAS PEQUEÑAS -->
+          <div class="ri-menu-3-line" id="menu-icon"></div>
+        </div>
+      </div>
+    </header>
+    <!-- BANNER -->
+    <div class="banner">
+      <img src="assets/BannerImage.png" alt="Banner" />
+    </div>
+
+    <!-- CONTENIDO DEL "SOBRE MÍ" -->
+    <div class="intro-section">
+      <div class="intro-content">
+        <div class="intro-left">
+          <div class="profile-image">
+            <img src="assets/you.png" class="profile-image" />
+          </div>
+        </div>
+        <div class="intro-right">
+          <p data-translate="about.intro-right">
+            Hello and welcome to this section <i>about me</i>. Nobody learns
+            anything without having a 'first contact with something,' let alone
+            coming up with the idea of creating games on their own.<br /><br />Below
+            are four sections separated by year, if you are curious to read it
+            all. Please do so in <b>chronological order</b>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- SECCIONES -->
+    <div class="timeline-section">
+      <div class="timeline-header" onclick="toggleSection(this)">
+        <span class="timeline-year">2020-2021</span>
+        <span class="expand-icon"><i class="ri-arrow-down-s-line"></i></span>
+      </div>
+      <div class="timeline-content">
+        <p data-translate="about.tc-1"></p>
+      </div>
+    </div>
+    <div class="timeline-section">
+      <div class="timeline-header" onclick="toggleSection(this)">
+        <span class="timeline-year">2022</span>
+        <span class="expand-icon"><i class="ri-arrow-down-s-line"></i></span>
+      </div>
+      <div class="timeline-content">
+        <p data-translate="about.tc-2"></p>
+      </div>
+    </div>
+    <div class="timeline-section">
+      <div class="timeline-header" onclick="toggleSection(this)">
+        <span class="timeline-year">2023</span>
+        <span class="expand-icon"><i class="ri-arrow-down-s-line"></i></span>
+      </div>
+      <div class="timeline-content">
+        <p data-translate="about.tc-3"></p>
+      </div>
+    </div>
+    <div class="timeline-section">
+      <div class="timeline-header" onclick="toggleSection(this)">
+        <span
+          class="timeline-year"
+          data-translate="about.timeline-section.fourth"
+          >2024-NOW</span
+        >
+        <span class="expand-icon"><i class="ri-arrow-down-s-line"></i></span>
+      </div>
+      <div class="timeline-content">
+        <p data-translate="about.tc-4"></p>
+      </div>
+    </div>
+
+    <!-- POPUP -->
+    <div
+      id="imagePopup"
+      class="img-popup-overlay"
+      onclick="closeImagePopup(event)"
+    >
+      <div class="img-popup" onclick="event.stopPropagation()">
+        <div class="img-popup-header">
+          <h2 class="img-popup-title" id="imagePopupTitle">Img</h2>
+          <button class="img-popup-close-btn" onclick="closeImagePopup()">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <div class="img-popup-body">
+          <div class="img-popup-content" id="imagePopupContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- PIE DE PÁGINA "FOOTER" -->
+    <footer>
+      <div class="footer-content">
+        <!-- LA SECCIÓN DE LA IZQUIERDA DEL FOOOTER -->
+        <div class="footer-section">
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:itchdotio"></iconify-icon
+            ><span
+              ><a href="https://rinkue.itch.io" target="_blank" title="itch.io"
+                >rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:gamejolt"></iconify-icon
+            ><span
+              ><a
+                href="https://gamejolt.com/@rinkue"
+                target="_blank"
+                title="Game Jolt"
+                >@rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:steam"></iconify-icon
+            ><span
+              ><a
+                href="https://steamcommunity.com/id/sr-rinkue/"
+                target="_blank"
+                title="Steam"
+                >SrRinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:discord"></iconify-icon
+            ><span
+              ><a
+                href="https://discordapp.com/users/730077432517886044"
+                target="_blank"
+                title="Discord"
+                >sr.rinkue</a
+              ></span
+            >
+          </div>
+        </div>
+        <!-- LA SECCIÓN DE LA DERECHA DEL FOOOTER -->
+        <div class="footer-section">
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:bluesky"></iconify-icon
+            ><span
+              ><a
+                href="https://bsky.app/profile/rinkue.bsky.social"
+                target="_blank"
+                title="Bluesky"
+                >@rinkue.bsky.social</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:twitter"></iconify-icon
+            ><span
+              ><a
+                href="https://twitter.com/SrRinkue"
+                target="_blank"
+                title="X (Twitter)"
+                >@SrRinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:youtube"></iconify-icon
+            ><span
+              ><a
+                href="https://youtube.com/@sr.rinkue?sub_confirmation=1"
+                target="_blank"
+                title="YouTube"
+                >@sr.rinkue</a
+              ></span
+            >
+          </div>
+          <div class="icon-text">
+            <iconify-icon icon="simple-icons:gmail"></iconify-icon
+            ><span
+              ><a href="mailto:sr.rinkue@gmail.com" title="Email"
+                >sr.rinkue@gmail.com</a
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="fade-top"></div>
+    <div id="fade-bottom"></div>
+    <!-- SCRIPT JS -->
+    <script type="text/javascript" src="src/localization.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
+  </body>
+</html>
