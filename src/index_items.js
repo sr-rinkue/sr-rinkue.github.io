@@ -7,22 +7,22 @@ const items = [
     fullDesc:
       "<h3>ARE YOUR FRIENDS REALLY YOUR FRIENDS?</h3><p>Inspired by the card game <em>Les Loups-garous de Thiercelieux</em>, in <em>The Town</em> you will join seven other people in an experience where you will not know who is lying or telling the truth about the murders that occur at night.</p><br><h3>A GAME YOU CAN PLAY BY YOURSELF</h3><p>For the first time ever, you won't have to call your friends to play with you, thanks to the AI that is part of RinStation. For people who don't have friends, this is a great achievement!</p>",
     tags: [{ icon: "simple-icons:windows", text: "FOR WINDOWS 10 AND 11" }],
-    //externalLink: {
-    //  text: "Listen to The Town OST",
-    //  icon: "ri-music-line",
-    //  albumData: {
-    //    title: "The Town OST",
-    //    icon: "ri-music-line",
-    //    coverImage: "assets/LUPUS_COVER_MUSIC.png",
-    //    links: [
-    //      {
-    //        text: "YouTube Music",
-    //        url: "https://music.youtube.com",
-    //        icon: "simple-icons:youtubemusic",
-    //      },
-    //    ],
-    //  },
-    //},
+    externalLink: {
+      text: "Listen to The Town OST",
+      icon: "ri-music-line",
+      albumData: {
+        title: "The Town OST",
+        icon: "ri-music-line",
+        coverImage: "assets/LUPUS_COVER_MUSIC.png",
+        links: [
+          {
+            text: "YouTube",
+            url: "https://youtu.be/zl6LZudoekM",
+            icon: "simple-icons:youtube",
+          },
+        ],
+      },
+    },
     whereButtons: [
       {
         icon: "simple-icons:itchdotio",
