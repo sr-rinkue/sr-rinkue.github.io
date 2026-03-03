@@ -13,7 +13,7 @@ const translations = {
         shortDesc:
           "You are one of the ten people who have been invited to play a game, which takes place in a town you don't know... or maybe you do?",
         fullDesc:
-          "<h3>ARE YOUR FRIENDS REALLY YOUR FRIENDS?</h3><p>Inspired by the card game <em>Les Loups-garous de Thiercelieux</em>, in <em>The Town</em> you will join nine other people in an experience where you will not know who is lying or telling the truth about the murders that occur at night.</p><br><h3>A GAME YOU CAN PLAY BY YOURSELF</h3><p>For the first time ever, you won't have to call your friends to play with you, thanks to the advanced artificial intelligence that is part of RinStation. For people who don't have friends, this is a great achievement!</p>",
+          "<h3>ARE YOUR FRIENDS REALLY YOUR FRIENDS?</h3><p>Inspired by the card game <em>Les Loups-garous de Thiercelieux</em>, in <em>The Town</em> you will join nine other people in an experience where you will not know who is lying or telling the truth about the murders that occur at night.</p><br><h3>A GAME YOU CAN PLAY BY YOURSELF</h3><p>For the first time ever, you won't have to call your friends to play with you, thanks to the AI that is part of RinStation. For people who don't have friends, this is a great achievement!</p>",
         tags: [{ text: "FOR WINDOWS 10/11" }],
         externalLink: {
           text: "Listen to the original soundtrack",
@@ -152,7 +152,7 @@ const translations = {
         shortDesc:
           "Eres una de las diez personas que han sido invitadas a jugar a un juego que tiene lugar en un pueblo que no conoces... ¿O quizá sí lo conoces?",
         fullDesc:
-          "<h3>¿TUS AMIGOS SON REALMENTE TUS AMIGOS?</h3><p>Inspirado en el juego de cartas <em>Les Loups-garous de Thiercelieux</em>, en <em>The Town</em> estarás con nueve personas más en una experiencia en la que no sabrás quién miente y quién dice la verdad sobre los asesinatos que ocurren por la noche.</p><br><h3>UN JUEGO EN EL QUE PUEDES JUGAR SOLO</h3><p>Por primera vez, no tendrás que llamar a tus amigos para que jueguen contigo, gracias a la inteligencia artificial avanzada que forma parte de la RinStation. ¡A la gente que no tiene amigos, esto es un gran logro!</p>",
+          "<h3>¿TUS AMIGOS SON REALMENTE TUS AMIGOS?</h3><p>Inspirado en el juego de cartas <em>Les Loups-garous de Thiercelieux</em>, en <em>The Town</em> estarás con nueve personas más en una experiencia en la que no sabrás quién miente y quién dice la verdad sobre los asesinatos que ocurren por la noche.</p><br><h3>UN JUEGO EN EL QUE PUEDES JUGAR SOLO</h3><p>Por primera vez, no tendrás que llamar a tus amigos para que jueguen contigo, gracias a la IA que forma parte de la RinStation. ¡A la gente que no tiene amigos, esto es un gran logro!</p>",
         tags: [{ text: "PARA WINDOWS 10 Y 11" }],
         externalLink: {
           text: "Escuchar la banda sonora original",
