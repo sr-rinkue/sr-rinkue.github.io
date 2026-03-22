@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- LO BÁSICO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sr. Rinkue - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/Favicon.png?v=2" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN "TOPNAV" -->
+    <header id="topbar">
+      <div class="logo-area">
+        <div class="logo-box">
+          <img src="assets/Logo.png" />
+        </div>
+      </div>
+
+      <div class="topbar-spacer"></div>
+
+      <nav id="nav-links">
+        <a href="index.htm" data-i18n="nav_home">HOME</a>
+        <a href="about.htm" class="active" data-i18n="nav_about">ABOUT</a>
+        <div class="lang-wrap">
+          <button id="lang-btn" aria-expanded="false" aria-haspopup="true">
+            LANGUAGE: EN<span class="lang-arrow">▾</span>
+          </button>
+          <div id="lang-dropdown" role="menu">
+            <div class="lang-dropdown-header" data-i18n="lang_dropdown_label">
+              LANGUAGE
+            </div>
+            <div class="lang-option" data-lang="es" role="menuitem">
+              <span data-i18n="lang_es">Español castellano</span>
+              <span class="lang-code">ES</span>
+            </div>
+            <div class="lang-option" data-lang="en" role="menuitem">
+              <span data-i18n="lang_en">English</span>
+              <span class="lang-code">EN</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <button id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div id="mobile-menu" role="navigation">
+      <a href="index.htm" data-i18n="nav_home">HOME</a>
+      <a href="about.htm" class="active" data-i18n="nav_about">ABOUT</a>
+      <div class="mobile-lang-header" data-i18n="lang_dropdown_label">
+        LANGUAGE
+      </div>
+      <div class="mobile-lang-option" data-lang="es">
+        <span data-i18n="lang_es">Español castellano</span>
+        <span class="lang-code">ES</span>
+      </div>
+      <div class="mobile-lang-option" data-lang="en">
+        <span data-i18n="lang_en">English</span>
+        <span class="lang-code">EN</span>
+      </div>
+    </div>
+
+    <main>
+      <div class="about-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <div class="profile-card">
+            <div class="profile-photo">
+              <img src="assets/ProfilePic.png" alt="Profile picture" />
+            </div>
+            <div class="profile-name">Sr. Rinkue</div>
+          </div>
+
+          <!-- <nav class="index-nav">
+            <div class="index-header" data-i18n="about_index_label">
+              // CONTENTS
+            </div>
+            <ul>
+              <li>
+                <a href="#intro" data-target="intro" data-i18n="about_index_1"
+                  >Introduction</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  data-target="contact"
+                  data-i18n="about_index_2"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav> -->
+        </aside>
+
+        <!-- CONTENIDO -->
+        <div class="content-area">
+          <div class="section-card">
+            <span class="section-anchor" id="contact"></span>
+            <div class="card-header clickable" onclick="copyAnchor('contact')">
+              <span data-i18n="about_contact_2">Contact</span>
+              <span class="anchor-icon" data-i18n="about_copy_link"
+                ># copy link</span
+              >
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>
+                  <span>itch.io</span>:
+                  <a href="https://rinkue.itch.io" target="_blank" rel="noopener noreferrer" style="color: var(--accent)">rinkue.itch.io</a>
+                </li>
+                <li>
+                  <span>Discord</span>:
+                  <a href="https://discordapp.com/users/730077432517886044" target="_blank" rel="noopener noreferrer" style="color: var(--accent)">@rinkue</a>
+                </li>
+                <li>
+                  <span>Bluesky</span>:
+                  <a href="https://bsky.app/profile/rinkue.bsky.social" target="_blank" rel="noopener noreferrer" style="color: var(--accent)">@rinkue.bsky.social</a>
+                </li>
+                <li>
+                  <span>Twitter</span>:
+                  <a href="https://twitter.com/SrRinkue" target="_blank" rel="noopener noreferrer" style="color: var(--accent)">@SrRinkue</a>
+                </li>
+                <li>
+                  <span>Email</span>:
+                  <a href="mailto:sr.rinkue@gmail.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent)">sr.rinkue@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <span data-i18n="footer">© 2026 Sr. Rinkue. All Rights Reserved.</span>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="src/i18n.js"></script>
+    <script src="src/script.js"></script>
+    <script>
+      function copyAnchor(id) {
+        const url =
+          window.location.origin + window.location.pathname + "#" + id;
+        navigator.clipboard.writeText(url).catch(() => showToast(url));
+      }
+
+      const _sections = ["who", "skills", "tools", "contact"];
+      const _links = document.querySelectorAll(".index-nav a[data-target]");
+
+      function updateActiveLink() {
+        let current = _sections[0];
+        _sections.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el && el.getBoundingClientRect().top <= 90) current = id;
+        });
+        _links.forEach((a) =>
+          a.classList.toggle("active-section", a.dataset.target === current),
+        );
+      }
+
+      window.addEventListener("scroll", updateActiveLink, { passive: true });
+      updateActiveLink();
+
+      if (window.location.hash) {
+        setTimeout(() => {
+          const el = document.getElementById(window.location.hash.slice(1));
+          if (el) el.scrollIntoView();
+        }, 120);
+      }
+    </script>
+  </body>
+</html>

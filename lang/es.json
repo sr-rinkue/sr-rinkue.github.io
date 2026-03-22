@@ -1,0 +1,34 @@
+{
+  "nav_home": "INICIO",
+  "nav_about": "SOBRE MÍ",
+  "nav_language": "IDIOMA: ES",
+
+  "footer": "© 2026 Sr. Rinkue. Todos los derechos reservados.",
+
+  "index_games_title": "Juegos",
+  "game_more_info": "Más información",
+
+  "game1_title": "Sobre el juego",
+  "game1_desc_short": "Eres una de las diez personas que han sido invitadas a jugar a un juego que tiene lugar en un pueblo que no conoces... ¿O quizá sí lo conoces?",
+  "game1_desc_full": "<h3>¿TUS AMIGOS SON REALMENTE TUS AMIGOS?</h3><p>Inspirado en el juego de cartas <em>Les Loups-garous de Thiercelieux</em>, en <em>The Town</em> estarás con nueve personas más en una experiencia en la que no sabrás quién miente y quién dice la verdad sobre los asesinatos que ocurren por la noche.</p><br><h3>UN JUEGO EN EL QUE PUEDES JUGAR SOLO</h3><p>Por primera vez, no tendrás que llamar a tus amigos para que jueguen contigo, gracias a la IA que forma parte de la RinStation. ¡A la gente que no tiene amigos, esto es un gran logro!</p>",
+  "game1_links_title": "Enlaces",
+  "game1_btn_itch": "Descargar gratis en itch.io",
+  "game1_media_title": "Fotos y Vídeos",
+  "game1_ost_title": "Banda sonora",
+  "game1_ost_heading": "¡ESCUCHA LA BANDA SONORA<br>ORIGINAL!",
+  "game1_ost_btn": "Escuchar la banda sonora en YouTube",
+
+  "about_index_label": "// CONTENIDOS",
+  "about_index_1": "Introducción",
+  "about_index_2": "Contacto",
+  "about_p1": "Hola y bienvenido o bienvenida a esta sección de <i>sobre mí</i>. Todo el mundo no aprende nada sin tener una «primera toma de contacto con algo» y aún menos que le haya generado a una persona, por su cuenta, la idea de crear juegos.<br><br>Abajo hay cuatro secciones separadas por años, si tienes la curioridad de leerlo todo. Por favor hazlo en <b>orden cronológico</b>.",
+  "about_p2": "",
+  "about_p3": "",
+  "about_p4": "",
+  "about_p5": "",
+  "about_copy_link": "# Copiar enlace",
+
+  "lang_dropdown_label": "IDIOMA",
+  "lang_en": "English",
+  "lang_es": "Español castellano"
+}

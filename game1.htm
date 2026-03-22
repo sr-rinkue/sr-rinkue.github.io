@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- LO BÁSICO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sr. Rinkue - THE TOWN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/Favicon.png?v=2" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGACIÓN "TOPNAV" -->
+    <header id="topbar">
+      <div class="logo-area">
+        <div class="logo-box">
+          <img src="assets/Logo.png" />
+        </div>
+      </div>
+
+      <div class="topbar-spacer"></div>
+
+      <nav id="nav-links">
+        <a href="index.htm" data-i18n="nav_home">HOME</a>
+        <a href="about.htm" data-i18n="nav_about">ABOUT</a>
+        <div class="lang-wrap">
+          <button id="lang-btn" aria-expanded="false" aria-haspopup="true">
+            LANGUAGE: EN<span class="lang-arrow">▾</span>
+          </button>
+          <div id="lang-dropdown" role="menu">
+            <div class="lang-dropdown-header" data-i18n="lang_dropdown_label">
+              LANGUAGE
+            </div>
+            <div class="lang-option" data-lang="es" role="menuitem">
+              <span data-i18n="lang_es">Español castellano</span>
+              <span class="lang-code">ES</span>
+            </div>
+            <div class="lang-option" data-lang="en" role="menuitem">
+              <span data-i18n="lang_en">English</span>
+              <span class="lang-code">EN</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <button id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div id="mobile-menu" role="navigation">
+      <a href="index.htm" data-i18n="nav_home">HOME</a>
+      <a href="about.htm" data-i18n="nav_about">ABOUT</a>
+      <div class="mobile-lang-header" data-i18n="lang_dropdown_label">
+        LANGUAGE
+      </div>
+      <div class="mobile-lang-option" data-lang="es">
+        <span data-i18n="lang_es">Español castellano</span>
+        <span class="lang-code">ES</span>
+      </div>
+      <div class="mobile-lang-option" data-lang="en">
+        <span data-i18n="lang_en">English</span>
+        <span class="lang-code">EN</span>
+      </div>
+    </div>
+
+    <main>
+      <!-- GAME INFO -->
+      <div class="section-card">
+        <div class="card-header" data-i18n="game1_title">About the game</div>
+        <div class="card-body">
+          <div class="game-info-layout">
+            <div class="game-cover-wrap">
+              <div class="game-cover-box">
+                <img src="assets/LUPUS_CASE_ENG.png"/>
+              </div>
+            </div>
+            <div class="game-desc">
+              <p data-i18n="game1_desc_short">You are one of the ten people who have been invited to play a game, which takes place in a town you don't know... or maybe you do?</p>
+              <br>
+              <div class="scan-line"></div>
+              <p data-i18n="game1_desc_full"><h3>ARE YOUR FRIENDS REALLY YOUR FRIENDS?</h3><p>Inspired by the card game <em>Les Loups-garous de Thiercelieux</em>, in <em>The Town</em> you will join seven other people in an experience where you will not know who is lying or telling the truth about the murders that occur at night.</p><br><h3>A GAME YOU CAN PLAY BY YOURSELF</h3><p>For the first time ever, you won't have to call your friends to play with you, thanks to the AI that is part of RinStation. For people who don't have friends, this is a great achievement!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- ENLACES -->
+      <div class="section-card">
+        <div class="card-header" data-i18n="game1_links_title">Links</div>
+        <div class="card-body">
+          <a href="https://rinkue.itch.io/the-town" target="_blank" rel="noopener noreferrer" class="btn" data-i18n="game1_btn_itch"
+            >Free Download on itch.io</a
+          >
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- FOTOS Y VÍDEOS -->
+      <div class="section-card">
+        <div class="card-header" data-i18n="game1_media_title">
+          Photos and Videos
+        </div>
+        <div class="card-body">
+          <div class="media-grid">
+            <div class="media-item">
+              <img src="assets/LUPUS_1.png">
+            </div>
+            <div class="media-item">
+              <img src="assets/LUPUS_2.png">
+            </div>
+            <div class="media-item">
+              <img src="assets/LUPUS_3.png">
+            </div>
+            <div class="media-item">
+              <img src="assets/LUPUS_4.png">
+            </div>
+            <div class="media-item">
+              <img src="assets/LUPUS_5.png">
+            </div>
+            <div class="media-item">
+              <img src="assets/LUPUS_6.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- OST -->
+      <div class="section-card">
+        <div class="card-header" data-i18n="game1_ost_title">Soundtrack</div>
+        <div class="card-body">
+          <div class="ost-layout">
+            <div class="ost-cover-box">
+              <img src="assets/LUPUS_COVER_MUSIC.png" />
+            </div>
+            <div class="ost-text">
+              <h3 data-i18n="game1_ost_heading">
+                CHECK OUT THE ORIGINAL SOUNDTRACK!
+              </h3>
+              <a href="https://youtu.be/zl6LZudoekM" class="btn" data-i18n="game1_ost_btn" target="_blank" rel="noopener noreferrer"
+                >Listen to the soundtrack on YouTube</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span data-i18n="footer">© 2026 Sr. Rinkue. All Rights Reserved.</span>
+    </footer>
+
+    <script src="src/i18n.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
