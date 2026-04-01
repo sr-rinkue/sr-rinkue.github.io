@@ -1,6 +1,6 @@
 {
   "nav_home": "INICIO",
-  "nav_about": "SOBRE MÍ",
+  "nav_about": "ENLACES",
   "nav_language": "IDIOMA: ES",
 
   "footer": "© 2026 Sr. Rinkue. Todos los derechos reservados.",
@@ -17,6 +17,8 @@
   "game1_ost_title": "Banda sonora",
   "game1_ost_heading": "¡ESCUCHA LA BANDA SONORA<br>ORIGINAL!",
   "game1_ost_btn": "Escuchar la banda sonora en YouTube",
+  "game2_desc_short": "Nueve personas más a parte de ti, han sido invitadas a jugar a un juego... ¿Sabrás si tu intuición de no haber ido en un principio, aunque luego hayas decidido ir te ha servido de algo?",
+  "game2_desc_full": "<h3>¿PUEDES CONFIAR EN TUS AMIGOS?</h3><p><i>THE TOWN</i>, inspirado en el juego de cartas <i>Les Loups-garous de Thiercelieux</i>, tiene un secreto... ¿Pero tus amigos lo sabrán? ¿O los que dicen que son tus «amigos» son realmente tus amigos?<br>Al igual que el juego de cartas, la deducción tiene un papel importante en <i>THE TOWN</i>, pero en algunas ocasiones tendrás que elegir qué hacer... Mientras en otras ocasiones no podrás elegir. Pero ten cuidado, por la noche ocurren asesinatos y los asesinos pueden ser tus propios amigos, aunque no te lo digan.</p><br /><h3>EL MISTERIO DEL «TIEMPO».</h3><p>Algunos dicen que el tiempo tiene que ver con el pueblo en el que estás, o directamente con el juego que estáis jugando... ¿Podrás descubrir la verdad sobre este suceso?</p>",
 
   "about_index_label": "// CONTENIDOS",
   "about_index_1": "Introducción",

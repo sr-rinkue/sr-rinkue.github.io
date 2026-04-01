@@ -1,6 +1,6 @@
 {
   "nav_home": "HOME",
-  "nav_about": "ABOUT",
+  "nav_about": "LINKS",
   "nav_language": "LANGUAGE: EN",
 
   "footer": "© 2026 Sr. Rinkue. All Rights Reserved.",
@@ -19,6 +19,8 @@
   "game1_ost_title": "Soundtrack",
   "game1_ost_heading": "CHECK OUT THE ORIGINAL<br>SOUNDTRACK!",
   "game1_ost_btn": "Listen to the soundtrack on YouTube",
+  "game2_desc_short": "Nine other people, besides you, have been invited to play a game... Will you find out whether your initial intuition not to go, even though you later decided to go, was right after all?",
+  "game2_desc_full": "<h3>CAN YOU TRUST YOUR FRIENDS?</h3><p><i>THE TOWN</i>, inspired by the card game <i>Les Loups-garous de Thiercelieux</i>, has a secret... But do your friends know about it? Or are those who call themselves your ‘friends’ really your friends?<br>Just like in a card game, deduction plays a key role in <i>THE TOWN</i>, but sometimes you'll have to choose what to do... Meanwhile, at other times you won't have a choice. But be careful: murders take place at night, and the murderers could be your own friends, even if they don't tell you.</p><br /><h3>THE MYSTERY OF ‘TIME’.</h3><p>Some say that the time has to do with the town you're in, or directly with the game you're playing... Will you be able to uncover the truth behind this phenomenon?</p>",
 
   "about_index_label": "// CONTENTS",
   "about_index_1": "Introduction",
